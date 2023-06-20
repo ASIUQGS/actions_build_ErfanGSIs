@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://ovnha5ur0lultp4t0tsr9ees12grbasj9ami8euh0u9il7j47iffut8i.qc.dolfincdnx.net:10443/xdispatch790d376ab7862251/bigota.d.miui.com/9.9.27/miui_MI8_9.9.27_8c7dad29c5_9.0.zip?bsreqid=40e6231e3c8fd8b70c374d28aae65103&bsxdisp=se
+  ROM_URL: https://bigota.d.miui.com/8.6.19/miui_MI8_8.6.19_8853840112_8.1.zip
   ROM_NAME: MIUI
   BUILD_TYPE: ab
   TZ: Asia/Shanghai
