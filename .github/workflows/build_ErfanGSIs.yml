@@ -14,14 +14,14 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://mjk6m77dj05tonaod6lh7pj9g496vnten202dtoh8gvbuqpdv65fujdd.qc.dolfincdnx.net:10443/xdispatch790d376ab7862251/bigota.d.miui.com/9.9.27/miui_MI8_9.9.27_8c7dad29c5_9.0.zip?bsreqid=861e39a3819b6b5a8a3eb07475295bcf&bsxdisp=se
+  ROM_URL: https://ovnha5ur0lultp4t0tsr9ees12grbasj9ami8euh0u9il7j47iffut8i.qc.dolfincdnx.net:10443/xdispatch790d376ab7862251/bigota.d.miui.com/9.9.27/miui_MI8_9.9.27_8c7dad29c5_9.0.zip?bsreqid=40e6231e3c8fd8b70c374d28aae65103&bsxdisp=se
   ROM_NAME: MIUI
   BUILD_TYPE: ab
   TZ: Asia/Shanghai
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
@@ -33,7 +33,7 @@ jobs:
             sudo -E apt-get -qq install git wget
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git ErfanGSI
+         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git ErfanGSIs
          
        - name: Fix exit
          run: |
@@ -61,7 +61,4 @@ jobs:
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs/output
               curl -sL https://git.io/file-transfer | sh
-              ./transfer gof ./final/GSI.zip
-
-         
-            
+              ./transfer wet ./final/GSI.zip
